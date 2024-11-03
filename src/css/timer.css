@@ -7,14 +7,9 @@
     gap: 10px;
 }
 
-input {
-    max-width: 355px;
+input[type="text"] {
+    max-width: 272px;
     margin-left: 156px;
-}
-
-input[type='text'],
-input[type='number'] {
-    min-width: 272px;
     height: 40px;
     padding-left: 16px;
     padding-right: 16px;
@@ -29,34 +24,40 @@ input[type='number'] {
     outline: none;
     transition: border-color var(--time) var(--cudic);
 }
+
+
     
-input[type='text']:hover,
-input[type='text']:focus,
-input[type='number']:hover,
-input[type='number']:focus {
+input[type="text"]:hover,
+input[type="text"]:focus {
     border-color: #000;
 }
     
-input[type='text']:active {
+input[type="text"]:active {
     border-color: #4e75ff;
 }
     
-input[type='text']:disabled {
+input[type="text"]:disabled {
     background-color: #fafafa;
     color: #808080;
     border-color: #808080;
 }
     
-input[type='number']:focus-within {
-    border-color: #4e75ff;
-}
 
 input:disabled:hover {
     cursor: not-allowed;
 }
 
-button {
-    max-width: 75px;
+button[type="button"] {
+    max-width: 75px;border: none;
+    background-color: #4E75FF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    height: 40px;
 }
 button:disabled {
     cursor: not-allowed;
@@ -84,9 +85,9 @@ button:disabled:hover {
     
 }
 .value {
-        font-size: 40px;
-        line-height: 1.2;
-        letter-spacing: 0.04em;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
 }
 .label {
     font-size: 16px;

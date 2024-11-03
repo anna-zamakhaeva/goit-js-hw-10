@@ -9,7 +9,6 @@ import "izitoast/dist/css/iziToast.min.css";
 const startBtn = document.querySelector("button")
 const timePicker = document.querySelector("#datetime-picker");
 startBtn.disabled = true;
-console.log(startBtn);
 
 let userSelectedDate;
 const options = {
@@ -32,7 +31,6 @@ const options = {
         userSelectedDate = selectedDates[0]
 },
 };
-console.log("userSelectedDate", userSelectedDate);
 
 flatpickr(timePicker, options)
 let intervalID;
@@ -83,7 +81,6 @@ function updateTimerDisplay(timeLeft) {
     minutesEl.textContent = addLeadingZero(minutes);
     secondsEl.textContent = addLeadingZero(seconds);
 }
-const label = document.querySelector(".label");
 
 
 

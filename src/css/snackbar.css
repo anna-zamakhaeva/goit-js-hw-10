@@ -4,39 +4,53 @@
 
 .form {
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     justify-content: start;
     gap: 8px;
     max-width: 360px;
     padding-left: 156px;
 }
-
+input[type="number"] {
+    width: 360px;
+    height: 40px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color var(--time) var(--cudic);
+}
 
 label {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
-    
-}
+    }
+
 fieldset {
     width: 360px;
     border: 1px solid #808080;
-        border-radius: 4px;
-        display: flex;
+    border-radius: 4px;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
+
 fieldset label {
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 264px;
-    /* margin: auto; */
+    margin: auto;
     gap: 8px;
 }
 
 
-button {
+button[type="submit"] {
     border: none;
     background-color: #4E75FF;
     font-weight: 500;
@@ -46,9 +60,10 @@ button {
     color: #fff;
     border-radius: 8px;
     padding: 8px 16px;
-    width: 100%;
+    width: 360px;
     height: 40px;
 }
+
 
 button:hover {
     background-color: #6C8CFF;
@@ -62,6 +77,10 @@ input {
     height: 40px;
 }
 
-input:hover {  
+input[type="number"]:hover,
+input[type="number"]:focus {  
     border-color: black;
+}
+input[type="number"]:focus-within {
+    border-color: #4e75ff;
 }
