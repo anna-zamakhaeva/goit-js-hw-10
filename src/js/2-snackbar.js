@@ -23,8 +23,13 @@ function handleSubmit() {
         setTimeout(() => {
             if (state === "fulfilled") {
                 resolve(delay);
+                console.log("resolve", delay);
+                
+            } else {
+                reject(delay);
+                console.log("reject", delay);
+
             }
-            reject(delay);
         }, delay);
     })
     promise
